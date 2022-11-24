@@ -17,6 +17,7 @@ This project is going to develop a RFM model to define the meaning of "profitabl
 2. study profitable customers consumption behavior after detection through regression model with features selection
 <br>
 From this data project, we found the valuable customers have the following behavior preferences:
+
 1. pretend to create or through mobile application instead of web version of HKTV mall
 2. personal care & health, housewares, fruits, vegetables & flowers, and mother & baby are the top hit product categories
 3. pretend to make order on wedesday and satuarday
