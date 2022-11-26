@@ -1,5 +1,5 @@
 # Customer-Behavior-Analysis
-this project is going to develop a customer behavior analysis model based on RFM model, Clustering and Logistic Regression algorithm <br>
+this project is going to develop a customer behavior analysis model based on RFM model and Logistic Regression algorithm <br>
 ____
 # Executive Summary
 Under the age of digital transformation and COVID, people are willing to surf internet to purchase items for their interests and daily life. To stand from the knee competition in e-Commerce market, especially retail industry, companies desire a tool to study and visualize their customer behavior in order to develop a high-degree of customization marketing campiagn or product to customer.<br>
