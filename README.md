@@ -10,10 +10,8 @@ This project is going to develop a RFM model to define the meaning of "profitabl
 ## Findings Conclusion
 From this data project, we found the valuable customers have the following behavior preferences:
 1. creating orders through mobile application instead of web version of HKTV mall
-2. personal care & health, housewares, fruits, vegetables & flowers, and mother & baby are the top hit product categories
-3. making orders on Wednesday and Saturday
-4. unfavor to weighted packages
-5. concetrate to purchase a specific primary categories
+2. personal care & health, housewares and mother & baby are the top hit product categories
+3. making orders on Wednesday
 
 ## Data Source
 The source of data is from [OpenData Bank](https://opendatabank.hktvmall.com/portal/home) which contains 2021Q1 transaction data. Those daily raw data are stored as csv file with gzip compression. Therefore, we concatenate 90 raw data files in 2021Q1 to two dataset with selected columns and rough data filter for RFM modeling and logistic regression model. 
@@ -81,5 +79,7 @@ model = lr.fit(dataset[:,best.support_], cluster_result)
 |sales_application_WebMobile|3.585540|
 
 ## Business Implications
-
-
+1. Sales_application_WebMobile has the biggest coefficient (3.588540) and the sales_application_Web has the second largest coefficient (2.827818).It indicates that online customers prefer to use handful application (e.g. Mobile Phone) to make order, comparing to web version of HKTV mall (3. 588540>2. 827818)<br>
+2. HKTV Mall’s consumers tend to purchase goods with promotion and might have continuous shopping habits to enjoy promotion. Items under promotion (0.663664) is positively correlated with profitable customers. It indicated that the if there have a discount on the original price of a good, more customers will make purchase on the discount goods.
+3.	Personal Care & Health (0.614956), Housewares(0.533115) and Mother& Baby (0.359407) are the only positive correlation with consumers in the “Primary Category and Sub_Cat_1” column. When these’ categories’ goods are available for purchase on the HKTV Mall, the customers with high RFM score would like to make an order, prioritizing with Personal Care & Health, Housewares and Mother& Baby’s products.
+4.	Wednesday (0.454174) is the peak day among other order dates. When it is Wednesdays, more high RFM score customers would like to make order(s).
